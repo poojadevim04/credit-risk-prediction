@@ -119,7 +119,6 @@ else:
     st.header("👤 Existing Customer")
 
     app_df = pd.read_csv('sample_existing.csv')
-
     customer_id = st.selectbox("Customer ID", app_df['SK_ID_CURR'])
 
     cust = app_df[app_df['SK_ID_CURR'] == customer_id]
