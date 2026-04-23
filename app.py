@@ -118,7 +118,7 @@ else:
 
     st.header("👤 Existing Customer")
 
-    app_df = pd.read_csv('data/application_train.csv')
+    app_df = pd.read_csv('sample_existing.csv')
 
     customer_id = st.selectbox("Customer ID", app_df['SK_ID_CURR'])
 
